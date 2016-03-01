@@ -1,0 +1,2 @@
+class SphereController < ApplicationController
+end
