@@ -1,2 +1,0 @@
-class UserInterestController < ApplicationController
-end
