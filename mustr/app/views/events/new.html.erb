@@ -1,0 +1,48 @@
+<% provide(:title, 'Sign up') %>
+<h1>Sign Up</h1>
+
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'form-control' %>
+
+      <%= f.label :rsvp %>
+      <%= f.radio_button :rsvp, class: 'form-control' %>
+
+      <%= f.label :admission %>
+      <%= f.text_field :admission, class: 'form-control' %>
+
+      <%= f.label :organization %>
+      <%= f.text_field :organization, class: 'form-control' %>
+
+      <%= f.label :date %>
+      <%= f.date_field :date, class: 'form-control' %>
+
+      <%= f.label :time %>
+      <%= f.time_field :time, class: 'form-control' %>
+
+      <%= f.label :street_address %>
+      <%= f.text_field :street_address, class: 'form-control' %>
+
+      <%= f.label :city %>
+      <%= f.text_field :city, class: 'form-control' %>
+
+      <%= f.label :street_address %>
+      <%= f.text_field :street_address, class: 'form-control' %>
+
+      <%= f.label :phone %>
+      <%= f.text_field :phone, class: 'form-control' %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email, class: 'form-control' %>
+
+      <%= f.label :url %>
+      <%= f.date_field :url, class: 'form-control' %>
+
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
